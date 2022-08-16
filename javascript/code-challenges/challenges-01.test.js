@@ -12,7 +12,6 @@ const addOne = (arr) => {
   let newArray = [];
   arr.forEach((value, index) => {
     newArray.push(++value);
-    console.log(newArray);
   });
   return newArray;
 };
@@ -26,7 +25,11 @@ Use `forEach` to loop over the input array. Modify each string, and add the upda
 ------------------------------------------------------------------------------------------------ */
 
 const addExclamation = (arr) => {
-  // Solution code here...
+  let newArray = [];
+  arr.forEach((value, index) => {
+    newArray.push(value + '!');
+  });
+  return newArray;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -38,7 +41,11 @@ Use `forEach` to loop over the input array. The modified strings should each be 
 ------------------------------------------------------------------------------------------------ */
 
 const allUpperCase = (arr) => {
-  // Solution code here...
+  let newArray = [];
+  arr.forEach((value) => {
+    newArray.push(value.toUpperCase());
+  });
+  return newArray;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -52,11 +59,20 @@ Use `forEach` to build a new array of strings, each string modified by the callb
 ------------------------------------------------------------------------------------------------ */
 
 const greeting = (word) => {
-  // Solution code here...
+  // let newArray = [];
+  return (word.toUpperCase()+ '!');
+  // word.forEach((value) => {
+  //   newArray.push(value.toUpperCase() + '!');
+  // });
+  // return newArray;
 };
 
 const speaker = (words, callback) => {
-  // Solution code here...
+  let newArray = [];
+  words.forEach((value) => {
+    newArray.push(callback(value));
+  });
+  return newArray;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -174,7 +190,7 @@ describe('Testing challenge 6', () => {
   });
 });
 
-xdescribe('Testing challenge 7', () => {
+describe('Testing challenge 7', () => {
   const inputs = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
 
   test('It should print out messages or numbers', () => {
