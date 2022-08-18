@@ -237,10 +237,11 @@ const snorlaxStats = {
 const extractStats = (arr) => {
   let newArray = [];
   arr.map( value => {
-    value.stat.name
 
-    // newArray.push(value);
+    newArray.push(value.stat);
+
   });
+
   return newArray;
 };
 
