@@ -329,7 +329,7 @@ describe('Testing challenge 4', () => {
   });
 });
 
-describe('Testing challenge 5', () => {
+describe('Test2ing challenge 5', () => {
   test('It should return an array continaing the names of the characters', () => {
     expect(returnNames(starWarsData)).toStrictEqual([ 'Luke Skywalker', 'C-3PO', 'R2-D2', 'Darth Vader', 'Leia Organa' ]);
     expect(returnNames(starWarsData).length).toStrictEqual(5);
