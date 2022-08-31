@@ -9,8 +9,11 @@ using the 'reduce' method.
 E.g. [4,2,7,5,9,2] -> 9
 ------------------------------------------------------------------------------------------------ */
 const maxInArray = (arr) => {
-
+  // let max = (a,b) => Math.max(a,b);
+  // arr.reduce ((max));
 };
+
+// mdn reference
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -25,7 +28,8 @@ const courseInfo = { name: 'Code 301', duration: { dayTrack: '4 weeks', eveningT
 };
 
 const getCourseKeys = (obj) => {
-  // Solution code here...
+  let props = Object.keys(obj);
+  return props;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -37,7 +41,13 @@ Write a function named checkValues that takes in an object and a value and retur
 ------------------------------------------------------------------------------------------------ */
 
 const checkValues = (obj, value) => {
-  // Solution code here...
+  for (let property in obj){
+    if (obj[property] === value){
+      return true;
+    } else {
+      return false;
+    }
+  }
 };
 
 /* ------------------------------------------------------------------------------------------------
