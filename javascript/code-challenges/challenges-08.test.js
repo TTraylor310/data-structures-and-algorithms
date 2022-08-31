@@ -53,8 +53,24 @@ let characters = [
 ];
 
 const sortByChildren = (charArray) => {
-  // Solution code here...
+  let ans = charArray.sort((a,b) => {
+    if (a.children.length>b.children.length){
+      return 1;
+    }else if (a.children.length<b.children.length){
+      return -1;
+    } else {
+      if (a.name>b.name){
+        return 1;
+      } else {
+        return -1;
+      }
+    }
+  });
+  return ans;
 };
+
+// charArray.sort( (a,b) => +a.children>+b.children ? -1:1);
+// charArray.sort( (a,b) => { a.name > b.name ? -1:1;});
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -64,7 +80,8 @@ Write a function named containsW that takes in a string. This function should us
 ------------------------------------------------------------------------------------------------ */
 
 const containsW = (str) => {
-  // Solution code here...
+  let regex = /w/g;
+  return regex.test(str);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -80,7 +97,8 @@ For example:
 ------------------------------------------------------------------------------------------------ */
 
 const isNum = (input) => {
-  // Solution code here...
+  let regex = /[1-9]/g;
+  return regex.test(input);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -91,7 +109,8 @@ Write a function named containsWorld that takes in a string or number of any len
 ------------------------------------------------------------------------------------------------ */
 
 const containsWorld = (input) => {
-  // Solution code here...
+  let regex = /world/g;
+  return regex.test(input);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -103,8 +122,11 @@ Return an array containing all the matches.
 ------------------------------------------------------------------------------------------------ */
 
 const isCapitalized = (str) => {
-  let he = str.match(/[A-Z][a-z]*/g);
-  return he;
+  // str=str.split(' ');
+  // return str.filter((v => /[A-Z][a-z]*/.test(v)));
+  let ans = str.match(/[A-Z][a-z]*/g);
+  return ans || [];
+
 };
 
 /* ------------------------------------------------------------------------------------------------
