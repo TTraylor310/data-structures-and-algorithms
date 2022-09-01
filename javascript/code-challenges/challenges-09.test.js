@@ -1,5 +1,7 @@
 'use strict';
 
+const { val } = require("cheerio/lib/api/attributes");
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 1 - Review
 
@@ -11,6 +13,12 @@ E.g. [4,2,7,5,9,2] -> 9
 const maxInArray = (arr) => {
   // let max = (a,b) => Math.max(a,b);
   // arr.reduce ((max));
+  // arr.reduce( (a,b) => b > a ? b : max, arr[0]);
+
+  return arr.reduce ((p, v) => {
+    return (p > v ? p : v);
+  });
+
 };
 
 // mdn reference
@@ -70,7 +78,9 @@ HR has asked you to change the data to make it easier to print so that it looks 
 ------------------------------------------------------------------------------------------------ */
 
 const updateNumbers = (obj) => {
-  // Solution code here...
+  for ( let property in obj) {
+    return (property+`: `+obj[property]);
+  }
 };
 
 
@@ -126,7 +136,9 @@ const characters = [
 
 const getHouses = (arr) => {
   let houses = [];
-  // Solution code here...
+  arr.forEach( person => {
+    houses.push(person.house);
+  });
   return houses;
 };
 
