@@ -6,6 +6,6 @@ Write a function called reverseArray which takes an array as an argument. Withou
 
 * ![Code Challenge 01](./img/array-reverse.png)
 
-## Approach & Efficiency
+### Approach & Efficiency
 
 Instructor worked through whiteboard exercise for class.
