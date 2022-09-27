@@ -1,12 +1,12 @@
-// 'use strict';
+'use strict';
 
-// let LinkedList = require('./linkedList');
+const LinkedList = require('./linkedList');
 
-// describe('Linked List', () => {
-//   it ('Can successfully instantiate an empty linked list', () => {
-//     // write the test
-//   });
-// });
+describe('Linked List', () => {
+  it ('Can successfully instantiate an empty linked list', () => {
+    
+  });
+});
 
 
 // Can successfully instantiate an empty linked list
