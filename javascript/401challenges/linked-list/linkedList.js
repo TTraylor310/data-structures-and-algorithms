@@ -12,56 +12,69 @@ class LinkedList {
     this.head = null;
   }
 
-  /**
-   * add a node to the END of the linked list
-   * @param {*} value
-   */
   add(value){
     const node = new Node(value);
-
-    // if there is no head, assign the new node to the head property
     if(!this.head){
       this.head = node;
       return;
     }
-    // traverse the linked list and add our new node to the end
     let current = this.head;
-
-    // choosing current.next ON PURPOSE.
-    // when current.next is null, I will reassign the new node
     while(current.next){
       current = current.next;
     }
-    //at this point next is null and we reassign the new node
     current.next = node;
   }
 
   traverse(){
-    // we start traversals at the linked list head.  always
     let current = this.head;
     while(current){
-      // when I traverse, I likely need to "do the thing"
       console.log(current.value);
       current = current.next;
     }
   }
 
   traverseWithCallback(callback){
-    // we start traversals at the linked list head.  always
     let current = this.head;
     while(current){
-      // when I traverse, I likely need to "do the thing"
       callback(current.value);
       current = current.next;
     }
   }
 
 
+  kthFromEnd(k){
+    let current = this.head;
 
+    if (current === null){
+      current = new Node(k);
+    } else {
+      let selection = current;
+      let length = 0;
 
+      while (selection !== null) {
+        length++;
+        selection = selection.next;
+      }
 
+      let count = ((length-k)===0)
+        ? (length++)
+        : (console.log('blahh'));
+
+      console.log('spot', count);
+
+      selection = current;
+
+      while (count-- > 1){
+        selection = selection.next;
+        console.log(current);
+      }
+
+      console.log('what');
+
+    }
+
+  }
 }
-
 
 
 function logger(value){
@@ -87,3 +100,7 @@ list.traverse();
 list.traverseWithCallback(console.log);
 
 list.traverseWithCallback(logger);
+
+list.kthFromEnd(2);
+console.log('newest lists', JSON.stringify(list));
+
