@@ -42,38 +42,38 @@ class LinkedList {
   }
 
 
-  kthFromEnd(k){
-    let current = this.head;
+  // kthFromEnd(k){
+  //   let current = this.head;
 
-    if (current === null){
-      current = new Node(k);
-    } else {
-      let selection = current;
-      let length = 0;
+  //   if (current === null){
+  //     current = new Node(k);
+  //   } else {
+  //     let selection = current;
+  //     let length = 0;
 
-      while (selection !== null) {
-        length++;
-        selection = selection.next;
-      }
+  //     while (selection !== null) {
+  //       length++;
+  //       selection = selection.next;
+  //     }
 
-      let count = ((length-k)===0)
-        ? (length++)
-        : (console.log('blahh'));
+  //     let count = ((length-k)===0)
+  //       ? (length++)
+  //       : (console.log('blahh'));
 
-      console.log('spot', count);
+  //     console.log('spot', count);
 
-      selection = current;
+  //     selection = current;
 
-      while (count-- > 1){
-        selection = selection.next;
-        console.log(current);
-      }
+  //     while (count-- > 1){
+  //       selection = selection.next;
+  //       console.log(current);
+  //     }
 
-      console.log('what');
+  //     console.log('what');
 
-    }
+  //   }
 
-  }
+  // }
 }
 
 
@@ -101,6 +101,6 @@ list.traverseWithCallback(console.log);
 
 list.traverseWithCallback(logger);
 
-list.kthFromEnd(2);
+// list.kthFromEnd(2);
 console.log('newest lists', JSON.stringify(list));
 
