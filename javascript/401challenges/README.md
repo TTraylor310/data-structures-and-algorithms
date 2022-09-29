@@ -1,10 +1,20 @@
 # 401 Challenges by Day and Number
 
 * [Code Challenge 01](./array-reverse/README.md)
-  * ![whiteboard screenshot](./array-reverse/array-reverse.png)
+  ![whiteboard screenshot](./array-reverse/array-reverse.png)
 * [Code Challenge 02](./array-insert-shift/README.md)
-  * ![whiteboard screenshot](./array-insert-shift/array-insert-shift.png)
+  ![whiteboard screenshot](./array-insert-shift/array-insert-shift.png)
 * [Code Challenge 03](./array-binary-search/README.md)
-  * ![whiteboard screenshot](./array-binary-search/array-binary-search.png)
-<!-- * [Code Challenge 01]() -->
-<!-- * [Code Challenge 01]() -->
+  ![whiteboard screenshot](./array-binary-search/array-binary-search.png)
+* [Code Challenge 04 - Mock Interviews](./cc04-interviews/README.md)
+  ![whiteboard work process](./cc04-interviews/wb-interview.png)
+* [Code Challenge 05 - Linked List Implementation](./linked-list-imp/README.md)
+  ![whiteboard work process]()
+* [Code Challenge 06 - Extended Linked List](./linked-list-ext/README.md)
+  ![whiteboard work process]()
+* [Code Challenge 07 - Link List k-th](./linked-list-kth/README.md)
+  ![whiteboard work process]()
+* [Code Challenge 08](./linked-list-zip/README.md)
+  ![whiteboard screenshot](./linked-list-zip/linked-list-zip.png)
+* [Code Challenge 09 - Linked List - palindrome?](./cc08-interviews/README.md)
+  ![whiteboard screenshot](./cc08-interviews/palindrome.png)

@@ -40,40 +40,6 @@ class LinkedList {
       current = current.next;
     }
   }
-
-
-  // kthFromEnd(k){
-  //   let current = this.head;
-
-  //   if (current === null){
-  //     current = new Node(k);
-  //   } else {
-  //     let selection = current;
-  //     let length = 0;
-
-  //     while (selection !== null) {
-  //       length++;
-  //       selection = selection.next;
-  //     }
-
-  //     let count = ((length-k)===0)
-  //       ? (length++)
-  //       : (console.log('blahh'));
-
-  //     console.log('spot', count);
-
-  //     selection = current;
-
-  //     while (count-- > 1){
-  //       selection = selection.next;
-  //       console.log(current);
-  //     }
-
-  //     console.log('what');
-
-  //   }
-
-  // }
 }
 
 
