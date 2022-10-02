@@ -18,3 +18,6 @@
   ![whiteboard screenshot](./linked-list-zip/linked-list-zip.png)
 * [Code Challenge 09 - Linked List - palindrome?](./cc08-interviews/README.md)
   ![whiteboard screenshot](./cc08-interviews/palindrome.png)
+* [Code Challenge 10 - Stacks and Queues](./stacks-queues/README.md)
+  ![stacks](./stacks-queues/stacks.js)
+  ![queues](./stacks-queues/queues.js)
