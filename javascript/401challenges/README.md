@@ -21,3 +21,5 @@
 * [Code Challenge 10 - Stacks and Queues](./stacks-queues/README.md)
   ![stacks](./stacks-queues/stacks.js)
   ![queues](./stacks-queues/queues.js)
+* [Code Challenge 11 - Stack-Queue-Pseudo](./stack-queue-pseudo/README.md)
+  ![stack-queue-pseudo](./stack-queue-pseudo/stack-queue-pseudo.png)
