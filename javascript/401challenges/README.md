@@ -23,3 +23,5 @@
   ![queues](./stacks-queues/queues.js)
 * [Code Challenge 11 - Stack-Queue-Pseudo](./stack-queue-pseudo/README.md)
   ![stack-queue-pseudo](./stack-queue-pseudo/stack-queue-pseudo.png)
+* [Code Challenge 12 - First-in, First out Animal Shelter](./stack-queue-animal-shelter/README.md)
+  ![stack-queue-animal-shelter](./stack-queue-animal-shelter/stack-queue-animal-shelter.png)
