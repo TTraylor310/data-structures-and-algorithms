@@ -25,3 +25,25 @@
   ![stack-queue-pseudo](./stack-queue-pseudo/stack-queue-pseudo.png)
 * [Code Challenge 12 - First-in, First out Animal Shelter](./stack-queue-animal-shelter/README.md)
   ![stack-queue-animal-shelter](./stack-queue-animal-shelter/stack-queue-animal-shelter.png)
+* [Code Challenge 13 - Stack Queue Brackets](./stack-queue-brackets/README.md)
+  ![stack-queue-brackets](./stack-queue-brackets/stack-queue-brackets.png)
+
+<!--
+
+
+
+# Linked List Zip
+
+
+
+## Whiteboard Process
+
+![WhiteBoardProcess]()
+
+## Approach & Efficiency
+
+
+
+## Solution
+
+ -->
