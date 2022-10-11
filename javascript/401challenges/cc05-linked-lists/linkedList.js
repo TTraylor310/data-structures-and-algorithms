@@ -1,72 +1,68 @@
 'use strict';
 
-class Node{
-  constructor(value){
+class Node {
+  constructor(value) {
     this.value = value;
     this.next = null;
   }
 }
 
 class LinkedList {
-  constructor(){
+  constructor() {
     this.head = null;
+    this.size = 0;
   }
 
-  add(value){
-    const node = new Node(value);
-    if(!this.head){
-      this.head = node;
+  insert(value) {
+    let newNew = new Node(value);
+    let current;
+    if(this.head === null){
+      this.head = newNew;
       return;
+    } else {
+      current = this.head;
+      while (current.next) {
+        current = current.next;
+      }
+      current.next = newNew;
     }
-    let current = this.head;
-    while(current.next){
-      current = current.next;
-    }
-    current.next = node;
+    this.size++;
   }
 
-  traverse(){
+  includes(input) {
     let current = this.head;
-    while(current){
-      console.log(current.value);
+    while (current !== null) {
+      if (current.value === input) {
+        return true;
+      }
       current = current.next;
     }
+    return false;
   }
 
-  traverseWithCallback(callback){
+  toString() {
     let current = this.head;
-    while(current){
-      callback(current.value);
+    let string = '';
+    while (current !== null) {
+      string += `{${current.value}} -> `;
       current = current.next;
     }
+    string += 'NULL';
+    return string;
   }
+
 }
 
 
-function logger(value){
-  console.log(`Node Value: ${value}`);
-}
+let ll = new LinkedList;
 
-let list = new LinkedList();
-console.log('empty list', list);
+ll.insert(1);
+ll.insert(20);
+ll.insert(300);
 
-// add head to list
-list.add(1);
-list.add(2);
-list.add(3);
-list.add(4);
-list.add(5);
+console.log('List:', JSON.stringify(ll));
 
-console.log('after', list);
+console.log(ll.includes(2));
+console.log(ll.includes(20));
 
-// hurts these eyes, but it looks like a series of nested objects
-console.log('populated list', JSON.stringify(list));
-
-list.traverse();
-list.traverseWithCallback(console.log);
-
-list.traverseWithCallback(logger);
-
-// list.kthFromEnd(2);
-console.log('newest lists', JSON.stringify(list));
-
+console.log(ll.toString());

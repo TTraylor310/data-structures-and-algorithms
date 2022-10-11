@@ -41,14 +41,13 @@
   ![stack-queue-brackets](./cc13-stack-queue-brackets/stack-queue-brackets.png)
 
 * [Code Challenge 14 - Mock Interview - DuckDuckGoose](./c14-duckduck/README.md)
-  ![duck-duck-goose](./c14-duckduck/whiteboard.png)
+  ![duck-duck-goose](./cc14-duckduck/whiteboard.png)
 
 * [Code Challenge 15 - Binary Tree and BST](./cc15-trees/README.md)
   <!-- ![trees](./trees/trees.js) -->
 
 * [Code Challenge 16 - Max Value in Binary Tree](./c16-tree-max/README.md)
-  ![trees](./tree-max/tree-max.png)
-
+  ![trees](./cc16-tree-max/tree-max.png)
 
 <!--
 
