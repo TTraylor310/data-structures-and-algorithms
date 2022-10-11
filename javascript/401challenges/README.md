@@ -27,6 +27,12 @@
   ![stack-queue-animal-shelter](./stack-queue-animal-shelter/stack-queue-animal-shelter.png)
 * [Code Challenge 13 - Stack Queue Brackets](./stack-queue-brackets/README.md)
   ![stack-queue-brackets](./stack-queue-brackets/stack-queue-brackets.png)
+* [Code Challenge 14 - Mock Interview - DuckDuckGoose](./duck-duck-goose/README.md)
+  ![duck-duck-goose](./duck-duck-goose/whiteboard.png)
+* [Code Challenge 15 - Trees](./trees/README.md)
+  ![trees](./trees/trees.js)
+* [Code Challenge 16 - Trees-MAX](./trees-max/README.md)
+  ![trees](./trees-max/trees-max.js)
 
 <!--
 

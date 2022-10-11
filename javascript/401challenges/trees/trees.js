@@ -8,35 +8,52 @@ class Node {
   }
 }
 
-class KaryNode{
-  constructor(value, k) {
-    this.value = value;
-    this.k = k;
-    this.children = [];
-  }
-}
+// class KaryNode{
+//   constructor(value, k) {
+//     this.value = value;
+//     this.k = k;
+//     this.children = [];
+//   }
+// }
 
-class BinaryTree {
+class BinarySearchTree {
   constructor() {
     this.root = null;
   }
 
-  preOrder(){
+  add(value) {
+    let newNode = new Node (value);
+    if(this.root === null) {
+      this.root = newNode;
+    } else {
+      this.insertNode(this.root, newNode);
+    }
+  }
 
-    const traverse = node => {
-      console.log(node.value);
-
-      if(node.left){
-        traverse(node.left);
+  insertNode(node, newNode) {
+    if(newNode.value < node.value) {
+      if(node.left === null) {
+        node.left = newNode;
+      } else {
+        this.insertNode(node.left, newNode);
       }
-      if(node.right){
-        traverse(node.right);
+    } else {
+      if (node.right === null) {
+        node.right = newNode;
+      } else {
+        this.insertNode(node.right, newNode);
       }
-
-    };
-
+    }
   }
 
 }
+
+
+let BST = new BinarySearchTree();
+BST.add(1);
+BST.add(3);
+BST.add(2);
+
+console.log(BST);
 
 
