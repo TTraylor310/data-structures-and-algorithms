@@ -4,7 +4,7 @@ const LinkedList = require('./linkedList');
 
 describe('Linked List', () => {
   it ('Can successfully instantiate an empty linked list', () => {
-    
+
   });
 });
 
