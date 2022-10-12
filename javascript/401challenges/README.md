@@ -50,4 +50,4 @@
   ![trees](./cc16-tree-max/tree-max.png)
 
 * [Code Challenge 17 - Tree, breadth first](./cc17-tree-breadth-first/README.md)
-  ![breadth first]()
+  ![breadth first whiteboard](./cc17-tree-breadth-first/tree-breadth-first.png)
