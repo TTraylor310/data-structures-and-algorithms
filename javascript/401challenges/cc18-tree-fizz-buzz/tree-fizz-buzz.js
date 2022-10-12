@@ -1,39 +1,41 @@
-'use strict';
-
 class Node {
-  constructor() {
-    this.key = 0;
-    this.child = [];
+  constructor(n, value) {
+    this.value = value;
+    this.child = Array(n);
   }
 }
 
-let newNode = key => {
-  let temp = new Node();
-  temp.key = key;
-  temp.child = [];
-  return temp;
+let fizzBuzz = (currentVALUE) => {
+  if (currentVALUE % 3 === 0 && currentVALUE % 5 === 0) {
+    return 'FizzBuzz';
+  } else if (currentVALUE % 3 === 0) {
+    return 'Fizz';
+  } else if (currentVALUE % 5 === 0) {
+    return 'Buzz';
+  } else {
+    return `${currentVALUE}`;
+  }
 };
 
-let depthOfTree = dOT => {
-  if (dOT === null) return 0;
-  let maxD = 0;
-  for(var it of dOT.child) maxD = Math.max(maxD,depthOfTree(it));
-  return maxD +1;
-};
+function inorder (node) {
+  if (node == null)
+    return;
+  var total = node.child.length;
+  for (var i = 0; i < total - 1; i++) inorder (node.child[i]);
+  console.log(fizzBuzz(node.value));
+  // console.log('' + node.value + ' ');
 
-var root = newNode('A');
-(root.child).push(newNode('B'));
-(root.child).push(newNode('F'));
-(root.child).push(newNode('D'));
-(root.child).push(newNode('E'));
-(root.child[0].child).push(newNode('K'));
-(root.child[0].child).push(newNode('J'));
-(root.child[2].child).push(newNode('G'));
-(root.child[3].child).push(newNode('C'));
-(root.child[3].child).push(newNode('H'));
-(root.child[3].child).push(newNode('I'));
-(root.child[0].child[0].child).push(newNode('N'));
-(root.child[0].child[0].child).push(newNode('M'));
-(root.child[3].child[2].child).push(newNode('L'));
 
-console.log(depthOfTree(root));
+  inorder(node.child[total - 1]);
+}
+
+var n = 2;
+var root = new Node(n, 1);
+root.child[0] = new Node(n, 2);
+root.child[1] = new Node(n, 3);
+root.child[2] = new Node(n, 6);
+root.child[0].child[0] = new Node(n, 19);
+root.child[0].child[1] = new Node(n, 15);
+root.child[0].child[2] = new Node(n, 21);
+
+inorder(root);
