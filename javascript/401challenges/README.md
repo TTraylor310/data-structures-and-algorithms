@@ -49,16 +49,5 @@
 * [Code Challenge 16 - Max Value in Binary Tree](./c16-tree-max/README.md)
   ![trees](./cc16-tree-max/tree-max.png)
 
-<!--
-
-# Linked List Zip
-
-## Whiteboard Process
-
-![WhiteBoardProcess]()
-
-## Approach & Efficiency
-
-## Solution
-
- -->
+* [Code Challenge 17 - Tree, breadth first](./cc17-tree-breadth-first/README.md)
+  ![breadth first]()
