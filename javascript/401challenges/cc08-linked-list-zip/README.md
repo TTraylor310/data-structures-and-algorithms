@@ -1,7 +1,10 @@
 # Linked List Zip
 
-[CC08](https://canvas.instructure.com/courses/5233640/assignments/32144425)
-  Write a function called zip lists which takes in 2 arguments of linked lists. Then will return New Linked List, zipped together into one so that the nodes alternate between the two lists and return a reference to the the zipped list.
+## Challenge
+
+- [CC08](https://canvas.instructure.com/courses/5233640/assignments/32144425)
+
+- Write a function called zip lists which takes in 2 arguments of linked lists. Then will return New Linked List, zipped together into one so that the nodes alternate between the two lists and return a reference to the the zipped list.
 
 ## Whiteboard Process
 
@@ -13,6 +16,6 @@
 
 ## Solution
 
-  Run "node linked-list-zip.js" in terminal. Shows creation of lists and how to insert.
+  Run `node /cc08-linked-list-zip/linked-list-zip-tk2.js` in terminal.
 
 * https://www.geeksforgeeks.org/merge-a-linked-list-into-another-linked-list-at-alternate-positions/
