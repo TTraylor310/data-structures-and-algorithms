@@ -21,7 +21,7 @@ function breadthFirst(root) {
     }
     // return queue;
   }
-};
+}
 
 
 let a = new Node(2);
