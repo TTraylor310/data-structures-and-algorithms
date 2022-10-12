@@ -51,3 +51,6 @@
 
 * [Code Challenge 17 - Tree, breadth first](./cc17-tree-breadth-first/README.md)
   ![breadth first whiteboard](./cc17-tree-breadth-first/tree-breadth-first.png)
+
+* [Code Challenge 18 - K-ary Tree, fizz buzz](./cc18-tree-fizz-buzz/README.md)
+  <!-- ![tree-fizz-buzz]() -->
