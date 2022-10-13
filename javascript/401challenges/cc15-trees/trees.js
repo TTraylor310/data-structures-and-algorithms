@@ -8,14 +8,6 @@ class Node {
   }
 }
 
-// class KaryNode{
-//   constructor(value, k) {
-//     this.value = value;
-//     this.k = k;
-//     this.children = [];
-//   }
-// }
-
 class BinarySearchTree {
   constructor() {
     this.root = null;
@@ -45,7 +37,6 @@ class BinarySearchTree {
       }
     }
   }
-
 }
 
 
@@ -55,5 +46,3 @@ BST.add(3);
 BST.add(2);
 
 console.log(BST);
-
-

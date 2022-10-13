@@ -19,7 +19,6 @@ function breadthFirst(root) {
     if (temp.right !== null) {
       queue.push(temp.right);
     }
-    // return queue;
   }
 }
 
@@ -42,17 +41,4 @@ a.right = c;
 c.right = f;
 f.right = i;
 
-
-// let root = new Node(2);
-// root.left = new Node(7);
-// root.left.left = new Node(2);
-// root.left.right = new Node(6);
-// root.left.right.left = new Node(5);
-// root.left.right.right = new Node(11);
-// root.right = new Node(5);
-// root.right.right = new Node(9);
-// root.right.right.right = new Node(4);
-
-// console.log(a.length);
 breadthFirst(a);
-// console.log(breadthFirst(a));

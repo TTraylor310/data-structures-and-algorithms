@@ -54,3 +54,6 @@
 
 * [Code Challenge 18 - K-ary Tree, fizz buzz](./cc18-tree-fizz-buzz/README.md)
   <!-- ![tree-fizz-buzz]() -->
+
+* [Code Challenge 19 - Tree, sum Odd node values](./cc19-tree-sum-odds/README.md)
+  <!-- ![tree-sum-odds]() -->
