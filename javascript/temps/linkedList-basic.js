@@ -193,6 +193,10 @@ class LinkedList {
 
   // }
 
+  // palindromeCheck() {
+
+  // }
+
 }
 
 

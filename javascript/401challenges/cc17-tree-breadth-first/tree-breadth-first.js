@@ -42,3 +42,16 @@ c.right = f;
 f.right = i;
 
 breadthFirst(a);
+
+
+// function traverseTree(tree) {
+//   let traverse = node => {
+//     if(node.left) traverse(node.left);
+//     console.log(node.value);
+
+//     if(node.right) traverse(node.right);
+//   }
+//   traverse(tree.root);
+// }
+
+// traverseTree(a);

@@ -8,13 +8,6 @@ class Node {
   }
 }
 
-// class KaryNode{
-//   constructor(value, k) {
-//     this.value = value;
-//     this.k = k;
-//     this.children = [];
-//   }
-// }
 
 class BinarySearchTree {
   constructor() {

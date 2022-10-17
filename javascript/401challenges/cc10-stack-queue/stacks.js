@@ -1,13 +1,15 @@
+'use strict';
+
 class Stack {
   constructor () {
     this.items = [];
     this.count = 0;
   }
 
-  push (value) {
-    this.items[this.count] = value;
+  push (data) {
+    this.items[this.count] = data;
     this.count += 1;
-    console.log(`${value} added to ${this.count}`);
+    console.log(`${data} added to ${this.count}`);
     return this.count-1;
   }
 
