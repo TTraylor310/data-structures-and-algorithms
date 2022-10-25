@@ -57,3 +57,6 @@
 
 * [Code Challenge 19 - Tree, sum Odd node values](./cc19-tree-sum-odds/README.md)
   ![tree-sum-odds](./cc19-tree-sum-odds/tree-sum-odds.png)
+
+* [Code Challenge 26 - Insertion Sort](./cc26-insertion-sort/README.md)
+  <!-- ![insertion-sort whiteboard]() -->
