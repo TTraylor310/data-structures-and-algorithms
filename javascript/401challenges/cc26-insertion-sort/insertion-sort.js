@@ -21,6 +21,7 @@ let selectionSort = (input) => {
   return input;
 };
 
+module.exports = selectionSort;
 
 console.log(selectionSort(array1));
 console.log(selectionSort(array2));
