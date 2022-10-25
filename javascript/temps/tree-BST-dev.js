@@ -39,6 +39,17 @@ class BinarySearchTree {
     }
   }
 
+  traversal(tree, callback){
+    // POSITION of the 'callback' determines type of search and order of display
+    const recTraverse = node => {
+      callback(node.value);
+      if(node.left) recTraverse(node.left);
+      if(node.right) recTraverse(node.right);
+    };
+    recTraverse(tree.root);
+  }
+
+
 }
 
 
@@ -46,7 +57,10 @@ let BST = new BinarySearchTree();
 BST.add(1);
 BST.add(3);
 BST.add(2);
+BST.add(5);
+BST.add(9);
 
 console.log(BST);
 
+BST.traversal(BST, console.log);
 
