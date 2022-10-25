@@ -37,7 +37,7 @@ class Queue{
 
   print(){
     if (this.isEmpty()){
-      console.log('Empty Queue')
+      console.log('Empty Queue');
     } else {
       let tempArr = [];
       let temp = this.front;
