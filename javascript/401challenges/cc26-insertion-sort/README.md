@@ -20,7 +20,9 @@ SelectionSort(int[] arr)
         arr[min] <-- arr[i];
         arr[i] <-- temp;
 
-`SAMPLE =  [ 8 , 4 , 23 , 42 , 16 , 15 ]`
+## Blog details of Challenge
+
+`sampleArray =  [ 8 , 4 , 23 , 42 , 16 , 15 ]`
 
 Pass 1:
 
