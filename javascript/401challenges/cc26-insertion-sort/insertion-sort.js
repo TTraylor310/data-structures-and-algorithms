@@ -6,7 +6,7 @@ const array3 = [5, 12, 7, 5, 5, 7];
 const array4 = [2, 3, 5, 7, 13, 11];
 
 
-let selectionSort = (input) => {
+const selectionSort = (input) => {
   let n = input.length;
   for (let i = 0; i < n-1; i++){
     let tempV;

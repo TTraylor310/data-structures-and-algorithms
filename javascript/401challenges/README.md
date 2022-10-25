@@ -59,4 +59,7 @@
   ![tree-sum-odds](./cc19-tree-sum-odds/tree-sum-odds.png)
 
 * [Code Challenge 26 - Insertion Sort](./cc26-insertion-sort/README.md)
-  <!-- ![insertion-sort whiteboard]() -->
+  <!-- ![insertion-sort whiteboard](./cc26-insertion-sort/) -->
+
+* [Code Challenge 27 - Merge Sort](./cc27-merge-sort/README.md)
+  <!-- ![merge-sort whiteboard](./cc27-merge-sort/) -->
