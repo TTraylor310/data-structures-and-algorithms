@@ -28,7 +28,7 @@ const merge = (left, right) => {
   return [...newArr, ...left, ...right];
 };
 
-module.exports = {mergeSort, merge};
+module.exports = {mergeSort};
 
 console.log(mergeSort(array1));
 console.log(mergeSort(array2));
