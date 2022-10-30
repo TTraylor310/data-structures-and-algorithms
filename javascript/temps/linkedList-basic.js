@@ -199,29 +199,30 @@ class LinkedList {
 
 }
 
+module.exports = {LinkedList};
 
 function logger(value) {
   console.log(`Node Value: ${value}`);
 }
 
-let list = new LinkedList();
-console.log('empty list', list);
+// let list = new LinkedList();
+// console.log('empty list', list);
 
 // add head to list
-list.add(1);
-list.add(2);
-list.add(3);
-list.add(4);
-list.add(5);
-list.removeAt(3);
+// list.add(1);
+// list.add(2);
+// list.add(3);
+// list.add(4);
+// list.add(5);
+// list.removeAt(3);
 // list.traverse();
 // list.addAt(6, 2);
-list.removeNum(9);
+// list.removeNum(9);
 
 // console.log('after:', list);
-console.log('after, nested:', JSON.stringify(list));
+// console.log('after, nested:', JSON.stringify(list));
 
 // list.traverseWithCallback(console.log);
-list.traverseWithCallback(logger);
+// list.traverseWithCallback(logger);
 
-list.printList();
+// list.printList();

@@ -68,4 +68,7 @@
   <!-- ![sort whiteboard](./cc28-sort/) -->
 
 - [Code Challenge 29 - Insertion Sort - Interview](./cc29-insertion-sort-interview/cc29%20interview.png)
-  [insertion-sort whiteboard](./cc29-insertion-sort-interview/cc29%20whiteboard.png)
+  ![insertion-sort whiteboard](./cc29-insertion-sort-interview/cc29%20whiteboard.png)
+
+- [Code Challenge 30 - Hash Table Implementation](./cc30-hash-table/README.md)
+  <!-- ![hash-table implementation] -->
