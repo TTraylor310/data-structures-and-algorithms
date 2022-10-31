@@ -24,3 +24,9 @@ Create Hashtable Class with:
   - Returns: Index in the collection for that key
 
 ## Approach & Efficiency
+
+Lots of following the template from Ryan in Class was super helpful. Figured out the hash and numbers are really just a good way to store that information to make it recallable faster. Each of the methods are listed for the desired output.
+
+### Solution
+
+`node hash-table.js` will return info associated with the Code Challenge.

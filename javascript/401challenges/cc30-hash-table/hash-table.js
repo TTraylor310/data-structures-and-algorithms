@@ -47,16 +47,11 @@ class HashTable {
   }
 
   keys() {
-    console.log(this.buckets);
-    this.buckets.forEach( (item, idx) => {
-
-      console.log(item);
-      // if (item.value){
-      //   console.log(item.head.value);
-      // } else {
-      //   return;
-      // }
+    let newArr = [];
+    this.buckets.forEach( item => {
+      newArr.push(item.head.value);
     });
+    console.log(newArr);
   }
 
 }
@@ -70,7 +65,7 @@ console.log('check table is EMPTY:', table);
 
 table.set('Tim', 'Tim');
 table.set('Carly', 'Carly');
-console.log('table after SETS', table);
+// console.log('table after SETS', table);
 
 // console.log(JSON.stringify(table.buckets[465]));
 // console.log(table.get('Tim'));
