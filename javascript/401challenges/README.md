@@ -72,3 +72,6 @@
 
 - [Code Challenge 30 - Hash Table Implementation](./cc30-hash-table/README.md)
   <!-- ![hash-table implementation] -->
+
+- [Code Challenge 31 - Hash Table - Repeated Words](./cc31-hashmap-repeated-word/README.md)
+  <!-- ![hash map repeated words](./cc31-hashmap-repeated-word/hashmap-repeated-word.js) -->
