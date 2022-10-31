@@ -13,7 +13,6 @@ class LinkedList {
     this.size = 0;
   }
 
-
   add(value) {
     const node = new Node(value);
     let current;
@@ -205,7 +204,8 @@ function logger(value) {
   console.log(`Node Value: ${value}`);
 }
 
-// let list = new LinkedList();
+let list = new LinkedList();
+
 // console.log('empty list', list);
 
 // add head to list
