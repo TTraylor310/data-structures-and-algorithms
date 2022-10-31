@@ -1,100 +1,82 @@
 'use strict';
 const {LinkedList} = require('./linkedList-basic');
 
-
-
 class HashTable {
 
-  constructor(size){
+  constructor (size) {
     this.size = size;
     this.buckets = new Array(size);
   }
 
-  /**
-   *
-   * @param {String} key
-   * @returns
-   */
-  hash(key){
+  hash (key) {
     let characters = key.split('');
-    let asciiSum = characters.reduce((sum, character) => {
+    let asciiSum = characters.reduce( (sum, character) => {
       return sum + character.charCodeAt(0);
     }, 0);
 
-
-    let initialHash = asciiSum * 599;
+    let initialHash = asciiSum * 421;
+    // console.log(initialHash % this.size);
     return initialHash % this.size;
   }
 
-  /**
-   *
-   * @param {string} key
-   * @param {*} value
-   * storing inside a linked list -- YOUR CODE WILL BE DIFFERENT
-   */
-  set(key, value){
+  set (key, value) {
     let position = this.hash(key);
-    // allows me to create a property dynamically from some variable
-    let data = {[key]: value};
-
-    // your code different here, no need for a linked list
-    // we check if there IS a bucket at the specified position
-    // if bucket exists, we add our data
-    if(this.buckets[position]){
+    let data = { [key]: value };
+    if(this.buckets[position]) {
+      // console.log('check 1-2-3', this.buckets[position]);
       let bucket = this.buckets[position];
       bucket.add(data);
     } else {
-      // if does not exist, create one
       let bucket = new LinkedList();
-
-      // then add data to the bucket
       bucket.add(data);
-
-      // then add the new bucket to its position in this.buckets array
       this.buckets[position] = bucket;
     }
   }
 
-
-  get(key){
+  get (key) {
     let position = this.hash(key);
-
-    // your code will look different here!!!
-    if (this.buckets[position]){
+    if (this.buckets[position]) {
       let bucket = this.buckets[position];
-      // if i were not allowing collisions, or not replacing values if collision found.... I need to figure out what value is appropriate to return...
-
-      // in this code, I will assume NO COLLISIONS
       let value = bucket.head.value[key];
       return value;
     }
   }
 
-
-  has(){
-    // is it contained in structure?
+  has (key) {
+    let position = this.hash(key);
+    if (this.buckets[position]) return true;
+    else return false;
   }
 
+  keys() {
+    console.log(this.buckets);
+    this.buckets.forEach( (item, idx) => {
 
-  keys(){
-    // what are the keys
+      console.log(item);
+      // if (item.value){
+      //   console.log(item.head.value);
+      // } else {
+      //   return;
+      // }
+    });
   }
+
 }
 
+module.exports = {HashTable};
 
 let table = new HashTable(1024);
 
+// console.log('check table is EMPTY:', table);
+// console.log('checking Tim .hash:', table.hash('Tim'));
+// console.log('checking Carly .hash:', table.hash('Carly'));
 
-// console.log(table);
-console.log(table.hash('Ryan'));
-// console.log(table.hash('Audrey'));
-console.log(table);
+// table.set('Tim', 'Tim');
+// table.set('Carly', 'Carly');
+// console.log('table after SETS', table);
 
-table.set('Ryan', {name: 'Ryan', age: 48});
-table.set('Audrey', 'Audrey');
-table.set('Ryan', 'Ryan');
-console.log(table);
+// console.log(JSON.stringify(table.buckets[465]));
+// console.log(table.get('Tim'));
+// console.log(table.has('Bob'));
 
-console.log(JSON.stringify(table.buckets[854]));
-// console.log(table.get('Ryan'));
-// console.log(table.get('Audrey'));
+// table.keys();
