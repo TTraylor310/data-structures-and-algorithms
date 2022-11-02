@@ -200,11 +200,11 @@ class LinkedList {
 
 module.exports = {LinkedList};
 
-function logger(value) {
-  console.log(`Node Value: ${value}`);
-}
+// function logger(value) {
+//   console.log(`Node Value: ${value}`);
+// }
 
-let list = new LinkedList();
+// let list = new LinkedList();
 
 // console.log('empty list', list);
 

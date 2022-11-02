@@ -43,9 +43,17 @@ let table1 = new HashTable(1024);
 let table2 = new HashTable(1024);
 let table3 = new HashTable(1024);
 
-string1.replace(/,/g, '').toUpperCase().split(' ').forEach( item => table1.set(item, item));
+// string1.replace(/,/g, '').toUpperCase().split(' ').forEach( item => table1.set(item, item));
 // string2.replace(/,/g, '').toUpperCase().split(' ').forEach( item => table2.set(item, item));
 // string3.replace(/,/g, '').toUpperCase().split(' ').forEach( item => table3.set(item, item));
 
-console.log('This is first repeated word(regardless of upper/lower case):', newArr[0].toLowerCase());
 
+function repeatedWord (string, table) {
+  let newArr = [];
+  string.replace(/,/g, '').toUpperCase().split(' ').forEach( item => table.set(item, item));
+  console.log('This is first repeated word(regardless of upper/lower case):', newArr[0].toLowerCase());
+}
+
+repeatedWord(string1, table1);
+// repeatedWord(string2, table2);
+// repeatedWord(string3, table3);
