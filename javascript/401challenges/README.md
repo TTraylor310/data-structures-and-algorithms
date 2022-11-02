@@ -78,3 +78,5 @@
 
 - [Code Challenge 32 - Hash Table - 2 binary trees, common values](./cc32-hashmap-treeintersection/README.md)
   ![hash map tree intersection](./cc32-hashmap-treeintersection/cc32.png)
+
+- [Code Challenge 33 - Hash Table - Left Join for 2 Hashmaps]

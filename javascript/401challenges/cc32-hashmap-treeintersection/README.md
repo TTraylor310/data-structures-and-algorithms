@@ -1,11 +1,11 @@
-# Hash Table - 
+# Hash Table - Tree Insertion
 
 ## Challenge
 
-- [CC32](https://canvas.instructure.com/courses/5233640/assignments/32144349)
+[CC32](https://canvas.instructure.com/courses/5233640/assignments/32144444)
 
-> Write a function called tree_intersection that takes two binary trees as parameters.
-> Using your Hashmap implementation as a part of your algorithm, return a set of values found in both trees.
+- Write a function called tree_intersection that takes two binary trees as parameters.
+- Using your Hashmap implementation as a part of your algorithm, return a set of values found in both trees.
 
 ## Approach & Efficiency
 
@@ -14,3 +14,5 @@ Started with drawing out the [whiteboard](cc32.png). Then created a Binary Searc
 ### Solution
 
 `node hashmap-treeinsertions.js` will return info associated with the Code Challenge.
+
+![Whiteboard](cc32.png)
