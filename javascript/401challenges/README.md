@@ -75,3 +75,6 @@
 
 - [Code Challenge 31 - Hash Table - Repeated Words](./cc31-hashmap-repeated-word/README.md)
   <!-- ![hash map repeated words](./cc31-hashmap-repeated-word/hashmap-repeated-word.js) -->
+
+- [Code Challenge 32 - Hash Table - 2 binary trees, common values](./cc32-hashmap-treeintersection/README.md)
+  ![hash map tree intersection](./cc32-hashmap-treeintersection/cc32.png)
