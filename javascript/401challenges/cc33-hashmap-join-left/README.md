@@ -13,7 +13,14 @@
     - Return: The returned data structure that holds the results is up to you. It doesn’t need to exactly match the output below, so long as it achieves the LEFT JOIN logic
 
 ## Approach & Efficiency
+  - Hash - SET for table 1 (key AND value)
+      - push KEY and VALUE into an ARRAY
+  - Hash - SET for table 2 (key AND value)
+      - check if KEY exists already
+          - if YES -> store VALUE into an ARRAY
+          - if NO -> store “NULL” into ARRAY
 
+  - O(log n) is very long.. Has to iterate through both arrays and checks for values.
 
 ## Solution
-
+  ![Whiteboard](cc33.png)
