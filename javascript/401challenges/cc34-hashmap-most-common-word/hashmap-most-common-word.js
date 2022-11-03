@@ -60,12 +60,12 @@ class HashTable {
 
 }
 
-let table = new HashTable(1024);
 let string1 = 'In a galaxy far far away';
 let string2 = 'Taco cat ate a taco';
 let string3 = 'No. Try not. Do or do not. There is no try.';
 
 function mostCommonWord (string) {
+  let table = new HashTable(1024);
   string.replace(/[.]/g, '')
     .toLowerCase().split(' ')
     .forEach( item => {
