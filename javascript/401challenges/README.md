@@ -79,4 +79,8 @@
 - [Code Challenge 32 - Hash Table - 2 binary trees, common values](./cc32-hashmap-treeintersection/README.md)
   ![hash map tree intersection](./cc32-hashmap-treeintersection/cc32.png)
 
-- [Code Challenge 33 - Hash Table - Left Join for 2 Hashmaps]
+- [Code Challenge 33 - Hash Table - Left Join for 2 Hashmaps](./cc33-hashmap-join-left/README.md)
+  ![hash table - left join whiteboard](./cc33-hashmap-join-left/cc33.png)
+
+- [Code Challenge 34 - Hash Table - Most Common Word](./cc34-hashmap-most-common-word/README.md)
+  ![hash map - most common word whiteboard](./cc34-hashmap-most-common-word/cc34.png)
