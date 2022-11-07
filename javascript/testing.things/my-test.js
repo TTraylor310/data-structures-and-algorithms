@@ -1,53 +1,53 @@
-// add node
-// add edge
-// get nodes
-// get neighbors
-// size
-class Vertex {
-  constructor(value){
-    this.value = value;
-  }
-}
-
-class Edge {
-  constructor(vertex, weight = 0){
-    this.vertex = vertex;
-    this.weight = weight;
-  }
-}
+'use strict';
 
 class Graph{
   constructor() {
-    this.adjacencyList = new Map();
+    this.adjacencyList = {};
   }
 
-  addVertex(value){
-    const vertex = new Vertex(value);
-    this.adjacencyList.set(vertex, []);
-    return vertex;
+  addVertex(vertex){
+    this.adjacencyList[vertex] = [];
   }
 
-  addDirectEdge(startVertex, endVertex, weight = 0) {
-    const neighbors = this.adjacencyList.get(startVertex);
-    neighbors.push(new Edge(endVertex, weight));
+  addEdge(vertex1, vertex2){
+    this.adjacencyList[vertex1].push(vertex2);
+    this.adjacencyList[vertex2].push(vertex1);
   }
 
   getNeighbors(vertex){
-    return [...this.adjacencyList.get(vertex)];
+    return [...this.adjacencyList[vertex]];
+  }
+
+  removeEdge(vertex1, vertex2){
+    this.adjacencyList[vertex1] = this.adjacencyList[vertex1].filter( v => v !== vertex2);
+    this.adjacencyList[vertex2] = this.adjacencyList[vertex2].filter( v => v !== vertex1);
+  }
+
+  removeVertex(vertex) {
+    while(this.adjacencyList[vertex].length){
+      const adjacentVertex = this.adjacencyList[vertex].pop();
+      this.removeEdge(vertex, adjacentVertex);
+    }
+    delete this.adjacencyList[vertex];
   }
 
   getNodes(){
-    return this.adjacencyList.keys;
+    return this.adjacencyList;
   }
-
 }
 
-let g = new Graph;
+const g = new Graph;
 g.addVertex('A');
 g.addVertex('B');
 g.addVertex('C');
 
-g.addDirectEdge('A', 'B');
-g.addDirectEdge('A', 'C');
+g.addEdge('A', 'B');
+g.addEdge('A', 'C');
+console.log(g);
 
-console.log(g.getNeighbors('A'));
+g.removeVertex('A');
+// g.removeEdge('A', 'C');
+console.log(g);
+
+// console.log('check getN:', g.getNeighbors('A'));
+// console.log('check all nodes:', g.getNodes());
