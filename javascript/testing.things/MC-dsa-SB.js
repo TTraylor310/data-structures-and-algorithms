@@ -1,3 +1,5 @@
+'use strict';
+
 class Graph {
   constructor() {
     this.adjacencyList = {};
@@ -19,19 +21,18 @@ class Graph {
     }
     return false;
   }
-
-
-
 }
 
-let myGraph = new Graph();
-myGraph.addVertex('A');
-myGraph.addVertex('B');
-myGraph.addVertex('B');
-myGraph.addVertex('C');
+const g = new Graph();
 
-myGraph.addEdge('A', 'B');
-myGraph.addEdge('A', 'C');
+g.addVertex('A');
+g.addVertex('B');
+g.addVertex('B');
+g.addVertex('C');
 
-console.log(myGraph);
-console.log(myGraph.getNodes('A'));
+g.addEdge('A', 'B');
+g.addEdge('A', 'C');
+
+
+// console.log(g);
+// console.log(g.getNodes('A'));
