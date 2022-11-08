@@ -23,7 +23,7 @@ class Graph {
     return vertex;
   }
 
-  addDirectedEdge(startVertex, endVertex){
+  addEdge(startVertex, endVertex){
     this.adjList.get(startVertex).push(new Edge(endVertex));
     this.adjList.get(endVertex).push(new Edge(startVertex));
 
@@ -43,14 +43,14 @@ const monstro = g.addVertex('Monstropolis');
 const nar = g.addVertex('Narnia');
 const nab = g.addVertex('Naboo');
 
-g.addDirectedEdge(pand, arend);
-g.addDirectedEdge(arend, monstro);
-g.addDirectedEdge(arend, metro);
-g.addDirectedEdge(monstro, metro);
-g.addDirectedEdge(nab, monstro);
-g.addDirectedEdge(nab, metro);
-g.addDirectedEdge(nar, metro);
-g.addDirectedEdge(nar, nab);
+g.addEdge(pand, arend);
+g.addEdge(arend, monstro);
+g.addEdge(arend, metro);
+g.addEdge(monstro, metro);
+g.addEdge(nab, monstro);
+g.addEdge(nab, metro);
+g.addEdge(nar, metro);
+g.addEdge(nar, nab);
 console.log(g);
 
 
