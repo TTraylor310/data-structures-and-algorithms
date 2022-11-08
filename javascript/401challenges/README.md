@@ -87,3 +87,9 @@
 
 - [Code Challenge 35 - Graph Implementation](./cc35-graph/README.md)
   <!-- ![graph imp]() -->
+
+- [Code Challenge 36 - Graph, breadth first](./cc36-graph-breadth-first/README.md)
+  ![graph of breadth first](./cc36-graph-breadth-first/cc36-problem.png)
+
+- [Code Challenge 37 - Graph, Business Trip](./cc37-graph-business-trip/README.md)
+  <!-- ![graph business trip](./cc37-graph-business-trip/) -->
