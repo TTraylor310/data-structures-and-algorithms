@@ -13,15 +13,3 @@ const tree = new BST();
 const { HashTable } = require('./hash-basic');
 const table = new HashTable(10);
 
-// table._hash('carly');
-// table.printTable();
-
-table.set('bolts', 1000);
-table.set('saw', 1);
-table.set('level', 3);
-
-
-
-table.printTable();
-
-console.log('what is the get', table.get('saw'));
