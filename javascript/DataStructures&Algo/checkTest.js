@@ -10,10 +10,18 @@ const que = new Queue();
 const {BST} = require('./tree-basic');
 const tree = new BST();
 
-tree.insert(47);
-tree.insert(76); 
-tree.insert(21);
+const { HashTable } = require('./hash-basic');
+const table = new HashTable(10);
 
-console.log(tree);
+// table._hash('carly');
+// table.printTable();
 
-tree.traversal(tree);
+table.set('bolts', 1000);
+table.set('saw', 1);
+table.set('level', 3);
+
+
+
+table.printTable();
+
+console.log('what is the get', table.get('saw'));
