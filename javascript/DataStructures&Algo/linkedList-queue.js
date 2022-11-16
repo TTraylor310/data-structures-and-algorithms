@@ -19,57 +19,33 @@ class Queue {
       current = current.next;
     }
   }
+
+  enqueue(value) {
+    let newNode = new Node(value);
+    if (!this.first) {
+      this.first = newNode;
+      this.last = newNode;
+    } else {
+      this.last.next = newNode;
+      this.last = newNode;
+    }
+    this.size++;
+    return this;
+  }
+
+  dequeue() {
+    if (this.size === 0) return undefined;
+    if (this.size === 1) {
+      this.first = null;
+      this.last = null;
+    } else {
+      let current = this.first;
+      this.first = this.first.next
+      current.next = null;
+    }
+    this.size--;
+    return this;
+  }
 }
 
-
-// getFirst() {
-//   if (this.first === null) {
-//       console.log("First: null");
-//   } else {
-//       console.log("First: " + this.first.value);
-//   }
-// }
-
-// getLast() {
-//   if (this.last === null) {
-//       console.log("Last: null");
-//   } else {
-//       console.log("Last: " + this.last.value);
-//   }
-// }
-
-// getLength() {
-//   console.log("Length: " + this.length);
-// }
-
-// makeEmpty() {
-//   this.first = null;
-//   this.last = null;
-//   this.length = 0;
-// }
-
-// enqueue(value) {
-//   const newNode = new Node(value);
-//   if (this.length === 0) {
-//       this.first = newNode;
-//       this.last = newNode;
-//   } else {
-//       this.last.next = newNode;
-//       this.last = newNode;
-//   }
-//   this.length++;
-// }
-
-// dequeue() {
-//   if(this.length === 0) return undefined;
-//   let temp = this.first;
-//   if(this.length === 1) {
-//       this.first = null;
-//       this.last = null;
-//   } else {
-//       this.first = this.first.next;
-//       temp.next = null;
-//   } 
-//   this.length--;
-//   return temp;
-// } 
+module.exports = { Queue }
